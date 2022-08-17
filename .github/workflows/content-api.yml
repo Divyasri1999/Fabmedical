@@ -44,7 +44,7 @@ jobs:
         repository: ${{ env.imageRepository }}
         tags: ${{ env.tag }},latest
 
-          - uses: Azure/aks-set-context@v1
+      - uses: Azure/aks-set-context@v1
         with:
           creds: '${{ secrets.AZURE_CREDENTIALS }}'
           cluster-name: '${{ env.clusterName }}'
